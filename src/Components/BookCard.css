@@ -1,0 +1,85 @@
+.book-card {
+    background-color: rgb(220, 219, 219);
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    box-sizing: border-box;
+}
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.book-card h3,
+.book-card p,
+.book-card h5,
+.book-card h4 {
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.book-card h3 {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.book-card h5 {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.book-card h4 {
+    font-size: 1rem;
+    color: #555;
+}
+
+.book-card p {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.book-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 600px) {
+    .book-card {
+        width: 75%; 
+        margin: 10px 0; 
+    }
+
+    .book-card h3,
+    .book-card p,
+    .book-card h5,
+    .book-card h4 {
+        margin: 5px 0; 
+    }
+
+    .book-card button {
+        width: 100%; 
+        padding: 0.75rem 1rem;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .book-card {
+        width: 45%; 
+    }
+}

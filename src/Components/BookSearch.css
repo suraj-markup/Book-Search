@@ -1,0 +1,86 @@
+.book-search {
+    padding: 2rem;
+    text-align: center;
+}
+
+.book-search input {
+    padding: 0.5rem;
+    width: 70%;
+    max-width: 400px;
+    border-radius: 10px;
+    /* margin-top: 2px; */
+    margin-right: 0.5rem;
+    box-sizing: border-box; 
+}
+.book-search h1 {
+    margin-bottom: 20px;
+}
+
+
+.book-search button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.book-search button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shimmer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.shimmer-card {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #dddddd 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 300px;
+    display: inline-block;
+    position: relative;
+    animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .book-search input {
+        width: 100%; 
+        margin: 0 0 0.5rem 0; 
+    }
+
+    .book-search button {
+        width: 100%; 
+        padding: 0.75rem; 
+    }
+
+    .shimmer-card {
+        width: 100%; 
+        height: auto; 
+        margin: 10px 0; 
+    }
+}
