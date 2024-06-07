@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center; 
     background-color: #333;
-    padding: 1rem;/*Allow items to wrap on smaller screens*/
+    padding: 1rem;
 }
 
 .navbar a {

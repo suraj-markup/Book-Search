@@ -8,7 +8,7 @@ const BookSearch = ({ onAddBook }) => {
     const [loading, setLoading] = useState(false);
 
     const fetchData = async () => {
-        if (!query) return; // Don't fetch if query is empty
+        if (!query) return; 
         setLoading(true);
         try {
             const response = await fetch(`https://openlibrary.org/search.json?q=${query}&limit=10&page=1`);
@@ -38,7 +38,7 @@ const BookSearch = ({ onAddBook }) => {
             />
             <button onClick={handleSearch}>Search</button>
             <div className="results">
-            {!query && !loading && <p>Type the name of the book you are looking for...</p>}
+            
             {loading ? (
                     <div className="shimmer-wrapper">
                         {Array(10).fill().map((_, index) => (
@@ -53,7 +53,7 @@ const BookSearch = ({ onAddBook }) => {
                             <BookCard key={book.key} book={book} onAdd={onAddBook} />
                         ))
                     )
-                )}
+                )}{!query && !loading && results.length===0?<p>Type the name of the book you are looking for...</p>:""}
                
             </div>
         </div>

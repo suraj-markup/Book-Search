@@ -44,3 +44,15 @@ Once the project is set up, you can run the application using the following step
 
 2. **Access the Application**:
     - Once the development server has started, you can access the application in your web browser by navigating to `http://localhost:3000`.
+
+
+![Alt Text](5.png)
+
+
+![Alt Text](1.png)
+
+
+![Alt Text](2.png)
+
+
+![Alt Text](4.png)
